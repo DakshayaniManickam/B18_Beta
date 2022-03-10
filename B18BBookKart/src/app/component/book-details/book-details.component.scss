@@ -1,0 +1,20 @@
+.image{
+    height: 300px;
+    width: 202px;
+    transition: 0.3s ease-in-out;
+    margin-top: 18px;
+}
+.image:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.table{
+    height: 80%;
+    width: 60%;
+    border-color: grey;
+    border-width: 1px;
+    font-family: Roboto,Helvettica Neue,sans-serif;
+}
+.wishlist{
+    margin-left: 15px;
+}

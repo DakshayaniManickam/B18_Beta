@@ -10,13 +10,13 @@ export class BookCardComponent implements OnInit {
 
   public allBooks: any = [];
   public allBookkk: any = [];
-  constructor(private serv: BookServiceService) { }
+  constructor(private bookServiceService: BookServiceService) { }
 
   ngOnInit(): void {
     this.getTotalBooks();
   }
   getTotalBooks() {
-    this.serv.getTotalBooks().subscribe((res) =>{
+    this.bookServiceService.getTotalBooks().subscribe((res) =>{
       this.allBooks = res;
       this.allBookkk = res;
     });

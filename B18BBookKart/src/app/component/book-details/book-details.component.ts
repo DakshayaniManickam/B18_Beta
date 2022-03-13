@@ -9,13 +9,12 @@ import { BookServiceService } from 'src/app/service/book-service.service';
 })
 export class BookDetailsComponent implements OnInit {
 
-  public particularBook:any;
-  public bookId:any;
+  public particularBook:any = [];
+  public bookId:any = [];
 
   constructor(private serv:BookServiceService,private route: ActivatedRoute) { 
     this.bookId = this.route.snapshot.paramMap.get('id');
-    console.log("from constructor"+this.bookId)
-  }
+    }
   public userId=527;
   public addedtowishlist:boolean=false;
 
@@ -24,8 +23,7 @@ export class BookDetailsComponent implements OnInit {
   }
   bookDetails(id:any){
     this.serv.bookDetails(id).subscribe((res=>{
-      this.particularBook=res;
-      console.log("from function"+JSON.stringify(this.particularBook))
+      this.particularBook=res;      
     }))
   }
   addToCart(){

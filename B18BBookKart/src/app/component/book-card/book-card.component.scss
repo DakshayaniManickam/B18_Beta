@@ -3,3 +3,9 @@ img{
     height: 250px ;
     width:170px;
 }
+h5{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+}

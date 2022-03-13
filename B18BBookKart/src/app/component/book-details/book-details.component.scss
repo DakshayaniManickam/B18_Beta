@@ -1,20 +1,31 @@
 .image{
+    position: relative;
     height: 300px;
     width: 202px;
     transition: 0.3s ease-in-out;
     margin-top: 18px;
 }
 .image:hover{
+    // position: relative;
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
 }
 .table{
+    position: relative;
+    left: 100px;
     height: 80%;
-    width: 60%;
+    width: 50%;
     border-color: grey;
     border-width: 1px;
-    font-family: Roboto,Helvettica Neue,sans-serif;
+    font-family: Roboto,Helvettica Neue,sans-serif;         
+}
+.btn-primary{
+    position: relative;
+    margin-left: 98px;
+    width: 18%;
 }
 .wishlist{
-    margin-left: 15px;
+    position: relative;
+    margin-left: 100px;
+    width: 18%;
 }

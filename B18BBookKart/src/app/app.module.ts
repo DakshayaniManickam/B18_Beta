@@ -10,6 +10,7 @@ import { BookCardComponent } from './component/book-card/book-card.component';
 import { BookDetailsComponent } from './component/book-details/book-details.component';
 import { CurrencyFormatPipe } from './currency-format.pipe';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -32,8 +33,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
-  ],
+    }),
+    BrowserAnimationsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

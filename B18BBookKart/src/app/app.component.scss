@@ -8,14 +8,16 @@ h2{
 label{
     background-color: blue;
     color: #f8f9fa;
-    width: 150px;
+    width: 180px;
     font-size: medium;
+    position: relative;
 }
 select{
-    position: absolute;
+    position: relative;
+    left: 48px;
     z-index: 10;
     right: 85%;
-    top: 102px;
+    top: 0px;
 }
 h1{
     background-color: orange;
